@@ -1,0 +1,10 @@
+{
+  "ignore": ["node_modules", "dev", "dist"],
+  "env": {
+    "NODE_ENV": "development",
+    "PORT": 3000,
+    "MONGO_URL": "mongodb://localhost/seasonNeptune"
+  },
+  "ext": ".js,.json",
+  "watch": "./"
+}
