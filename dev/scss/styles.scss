@@ -2,23 +2,136 @@
 $primaryColorRed: #C44D45;
 $secondaryColorBlack: #323232;
 $additionalColorBlue: #006494;
-//спецификация
-body{
-  font-family: "Lucida Grande", sans-serif;
+
+:root{
+  font-size: 20px;
 }
 
-ul li a{
-  text-decoration: none;
+body{
+  font-family: "Lucida Grande", sans-serif;
   margin:0;
   padding:0;
 }
 
-nav{
-  color: $secondaryColorBlack;
-  display: inline-block;
+ul{
+  list-style: none;
+  text-decoration: none;
 }
 
-.logo img{
+header{
+  background-color: $secondaryColorBlack;
+}
+nav{
+  display: inline-flex;
+  padding-bottom: 1em;
+}
+
+nav ul{
+  padding-top:1.5em;
+  display: inline-flex;
+  flex-direction: row;
+}
+
+.nav__left{
+  margin-left:auto;
+}
+
+.nav__right{
+  margin-right: auto;
+}
+
+.nav ul li a{
+  padding: 0 2em;
+  margin:0 2em;
+  color:white;
+  text-decoration: none;
+}
+
+.nav ul li a:hover{
+  color:$secondaryColorBlack;
+  background-color: white;
+  padding:4em 2em;
+  transition: 0.4s ease;
+}
+
+.logo{
   height:61px;
   width:144px;
+  padding-top:5px;
+  margin: 0 auto;
+}
+
+.burger{
+  display:none;
+}
+.season{
+  background-color:$secondaryColorBlack;
+  height:800px;
+  padding:0;
+}
+
+.season__background{
+  position: relative;
+  width:100%;
+  height: 100%;
+}
+
+.title{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 1.5em;
+  width:100%;
+}
+
+.logoNeptune{
+  position:absolute;
+  height:324px;
+  width:324px;
+  top:3.5em;
+}
+
+.title__white{
+  color:white;
+}
+
+.title__blue{
+  margin-left: 1em;
+  color:$additionalColorBlue;
+}
+
+@media screen and (max-width: 1448px){
+  .nav ul li a{
+    padding:0 1em;
+    margin:0;
+  }
+  .nav ul li a:hover{
+    color:$secondaryColorBlack;
+    background-color: white;
+    padding:4em 1em;
+    transition: 0.4s ease;
+  }
+
+  .nav__left{
+    margin-left:auto;
+  }
+  .nav__right{
+    margin-right:auto;
+  }
+}
+
+@media screen and (max-width:992px){
+  .nav__right, .nav__left{
+    display:none;
+  }
+  .burger{
+    display:block;
+    color: white;
+    margin-right: auto;
+    padding-top: 1.5em;
+  }
+
+  .logo{
+    margin-left: auto;
+  }
 }
