@@ -66,7 +66,7 @@ nav ul{
 }
 .season{
   background-color:$secondaryColorBlack;
-  height:800px;
+  height:600px;
   padding:0;
 }
 
@@ -88,7 +88,7 @@ nav ul{
   position:absolute;
   height:324px;
   width:324px;
-  top:3.5em;
+  top:4.5em;
 }
 
 .title__white{
@@ -98,6 +98,61 @@ nav ul{
 .title__blue{
   margin-left: 1em;
   color:$additionalColorBlue;
+}
+
+.season__under{
+  position: absolute;
+  display:flex;
+  justify-content: center;
+  padding-top: 22em;
+}
+
+.season__under__date{
+  display:flex;
+  justify-content: center;
+}
+
+.scheme_white{
+  background-color: white;
+}
+
+.scheme_black{
+  background-color: $secondaryColorBlack;
+}
+
+.video{
+  display:flex;
+  justify-content: center;
+  padding-bottom: 2em;
+}
+
+.title_section_black{
+  display: flex;
+  justify-content: center;
+  padding:1.5em;
+  color:$secondaryColorBlack;
+}
+
+.title_section_white{
+  display: flex;
+  justify-content: center;
+  padding:1.5em;
+  color:white;
+}
+
+.calendar__box{
+  text-align: center;
+}
+
+.date{
+  color:white;
+  border: 1px solid $primaryColorRed;
+  padding: 3em 0;
+}
+
+.registration_field{
+  text-align: center;
+  padding: 2em;
 }
 
 @media screen and (max-width: 1448px){
@@ -134,4 +189,5 @@ nav ul{
   .logo{
     margin-left: auto;
   }
+
 }
